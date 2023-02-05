@@ -20,13 +20,6 @@
         file_put_contents('todo_list.json', json_encode($todo_list)); 
     };
 
-
-    if (isset($_GET['deleteTask'])) {
-        unset($todo_list[$_GET['deleteTask']]);
-        file_put_contents('todo_list.json', json_encode($todo_list));
-        
-    };
-
     header('Content-Type: application/json');
     
     //array to json format

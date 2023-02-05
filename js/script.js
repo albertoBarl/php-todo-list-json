@@ -27,18 +27,5 @@ createApp({
           this.todoList = response.data;
         });
     },
-
-    deleteTask(task) {
-      const data = {
-        deleteTask: task,
-      };
-      axios
-        .post(this.apiUrl, data, {
-          headers: { "Content-Type": "multipart/form-data" },
-        })
-        .then((response) => {
-          this.todoList = response.data;
-        });
-    },
   },
 }).mount("#app");

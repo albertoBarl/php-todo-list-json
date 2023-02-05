@@ -23,7 +23,7 @@
         <div class="form-control" style="width: 60%">
             <ul  class="list-unstyled d-flex flex-column">
                 <li class="border-bottom p-2 d-flex justify-content-between align-items-center" v-for="(item, index) in todoList">{{item.theElement}}
-                    <button class="btn btn-danger" @click="deleteTask(task)">DELETE</button>
+                    <button class="btn btn-danger">DELETE</button>
                 </li>
             </ul>
         </div>
