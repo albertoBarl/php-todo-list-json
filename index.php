@@ -20,16 +20,16 @@
 <body class="bg-dark">
     <div id="app">
     <div class="container">
-        <div class="form-control">
+        <div class="form-control" style="width: 60%">
             <ul  class="list-unstyled d-flex flex-column">
-                <li class="border-bottom p-2">prova
-                    <button class="btn btn-danger">DELETE</button>
+                <li class="border-bottom p-2 d-flex justify-content-between align-items-center" v-for="(item, index) in todoList">{{item.theElement}}
+                    <button class="btn btn-danger" @click="deleteTask(task)">DELETE</button>
                 </li>
             </ul>
         </div>
-        <div class="form-control">
-            <input type="text" name="newEl">
-            <button>Inserisci</button>
+        <div class="form-control d-flex justify-content-evenly" style="width: 60%">
+            <input type="text" class="form-control" v-model="newTask" name="newElement" @keyup.enter="addTodo" style="width:80%">
+            <button class="btn btn-warning" @click="addTodo">Inserisci</button>
         </div>
     </div>
     </div>
