@@ -19,7 +19,20 @@
 </head>
 <body class="bg-dark">
     <div id="app">
-        
+    <div class="container">
+        <div class="form-control">
+            <ul  class="list-unstyled d-flex flex-column">
+                <li class="border-bottom p-2">prova
+                    <button class="btn btn-danger">DELETE</button>
+                </li>
+            </ul>
+        </div>
+        <div class="form-control">
+            <input type="text" name="newEl">
+            <button>Inserisci</button>
+        </div>
     </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
